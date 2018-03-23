@@ -7,6 +7,5 @@ def reformat_languages(languages)
       answer[lang] = {type, style: style}
     end
   end
-  p answer
   answer
 end

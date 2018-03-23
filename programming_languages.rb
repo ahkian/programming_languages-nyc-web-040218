@@ -1,5 +1,5 @@
 def reformat_languages(languages)
-  answer = Hash.new 
+  answer = Hash.new
   languages.each do |el1, el2|
     binding.pry
   end

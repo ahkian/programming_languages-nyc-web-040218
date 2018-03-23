@@ -4,9 +4,9 @@ def reformat_languages(languages)
   answer = Hash.new
   languages.each do |style, langs|
     langs.each do |lang, type|
-      type.each do |el1, el2|
+      type.each do |key1, val1|
         binding.pry
-        # answer[lang] = {type, style: style}
+        answer[lang] = {key1 => val1, :style => style}
       end
     end
   end

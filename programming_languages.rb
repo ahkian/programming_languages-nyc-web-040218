@@ -5,7 +5,11 @@ def reformat_languages(languages)
   languages.each do |style, langs|
     langs.each do |lang, type|
       type.each do |key1, val1|
-        answer[lang] = {key1 => val1, :style => [] << style}
+        if answer.include? lang 
+          answer[lang][style] << style
+        else
+          answer[lang] = {key1 => val1, :style => [] << style}
+        end
       end
     end
   end
